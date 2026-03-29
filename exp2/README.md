@@ -1,22 +1,66 @@
-# Experiment 2: Login & Password Management
+# Experiment 2: User Authentication
 
-**Objective:** Implement user authentication with form validation and screen navigation.
+## Overview
 
-## Description
+A Flutter application demonstrating a simple login authentication system with user credential validation.
 
-A login system with credential validation and password reset functionality using shared state management.
+## Purpose
 
-## Key Features
+This project showcases:
 
-- **Data Modeling:** `UserData` class with static variables for credentials
-- **Input Handling:** `TextEditingController` to capture and clear user inputs
-- **Authentication:** Credential matching and password validation
-- **Navigation:** `Navigator.push` and `Navigator.pop` for screen transitions
-- **Feedback:** `SnackBar` alerts for errors and success messages
-- **Security:** `obscureText: true` for password fields
+- User input handling with TextEditingController
+- Form validation and error handling
+- Navigation between screens
+- State management with StatefulWidget
+- SnackBar notifications
 
-![alt text](output/homepage.PNG)
+## Features
 
-![alt text](output/loginpage.PNG)
+- ✓ Login form with username and password fields
+- ✓ User credential validation
+- ✓ Error messages via SnackBar
+- ✓ Navigation to home page on successful login
+- ✓ Input field clearing after successful login
 
-![alt text](output/resetPassword.PNG)
+## Login Credentials
+
+- **Username:** admin
+- **Password:** 123
+
+## Getting Started
+
+### Installation
+
+```bash
+cd exp2
+flutter pub get
+```
+
+### Running
+
+```bash
+flutter run
+```
+
+## Project Structure
+
+```
+exp2/
+├── lib/
+│   └── main.dart          # Login page and home page
+├── pubspec.yaml
+└── README.md
+```
+
+## What You'll Learn
+
+- TextEditingController for form input
+- StatefulWidget lifecycle
+- Navigator for page routing
+- Error handling with SnackBar
+- Controller disposal pattern
+
+## Technologies Used
+
+- Flutter 3.x
+- Dart 3.x
